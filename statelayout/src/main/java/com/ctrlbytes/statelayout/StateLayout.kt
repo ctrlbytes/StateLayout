@@ -26,6 +26,7 @@ class StateLayout(context: Context, attrs: AttributeSet) : FrameLayout(context, 
     private val buttonText: Int
     private val emptyImage: Int
     private val errorImage: Int
+    private val loadingViewId: Int
 
     private lateinit var contentView: View
     private lateinit var progressBarContainer: ViewGroup
@@ -43,6 +44,7 @@ class StateLayout(context: Context, attrs: AttributeSet) : FrameLayout(context, 
                 )
                 emptyImage = getResourceId(R.styleable.StateLayout_emptyImage, R.drawable.ic_ufo)
                 errorImage = getResourceId(R.styleable.StateLayout_errorImage, R.drawable.ic_ufo)
+                loadingViewId = getResourceId(R.styleable.StateLayout_loadingView, NO_ID)
             } finally {
                 recycle()
             }
@@ -63,6 +65,9 @@ class StateLayout(context: Context, attrs: AttributeSet) : FrameLayout(context, 
         ivErrorIcon = inflatedView.findViewById(R.id.iv_error_icon)
         tvErrorMessage = inflatedView.findViewById(R.id.tv_error_message)
         btnRetry = inflatedView.findViewById(R.id.btn_retry)
+
+        btnRetry.setText(buttonText)
+
         addView(inflatedView)
     }
 
