@@ -54,7 +54,8 @@
             android:layout_height="match_parent"
             app:buttonText="@string/try_again"
             app:emptyImage="@drawable/ic_inbox"
-            app:errorImage="@drawable/ic_cactus">
+            app:errorImage="@drawable/ic_cactus"
+            app:loadingView="@layout/loading">
 
             <TextView
                 android:layout_width="wrap_content"
