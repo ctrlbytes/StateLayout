@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="statelayout_error_default">Unknown Error</string>
+    <string name="statelayout_default_buttonText">Retry</string>
+</resources>

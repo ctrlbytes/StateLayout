@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ctrlbytes.statelayoutdemo.MainActivity">
+
+    <item
+        android:id="@+id/action_content"
+        android:title="Content" />
+
+    <item
+        android:id="@+id/action_empty"
+        android:title="Empty" />
+
+    <item
+        android:id="@+id/action_loading"
+        android:title="Loading" />
+
+    <item
+        android:id="@+id/action_error"
+        android:title="Error" />
+
+</menu>
