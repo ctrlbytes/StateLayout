@@ -137,7 +137,7 @@ class StateLayout(context: Context, attrs: AttributeSet) : FrameLayout(context, 
         ivErrorIcon.setImageResource(emptyImage)
     }
 
-    fun showEmpty(message: Int) = showError(context.getString(message))
+    fun showEmpty(message: Int) = showEmpty(context.getString(message))
 
     fun onButtonClick(block: () -> Unit) {
         btnRetry.setOnClickListener { block() }
