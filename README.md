@@ -55,9 +55,10 @@ onButtonClick {
 
 ## Attributes
 
-| Attribute   | Usage                |
-|-------------|----------------------|
-| buttonText  | Retry Button Text    |
-| emptyImage  | Empty State Icon     |
-| errorImage  | Error State Icon     |
-| loadingView | Custom Loading View  |
+| Attribute        | Usage                |
+|------------------|----------------------|
+| buttonText       | Retry Button Text    |
+| emptyImage       | Empty State Icon     |
+| errorImage       | Error State Icon     |
+| loadingView      | Custom Loading View  |
+| retryButtonStyle | Retry Button Style   |

@@ -75,7 +75,7 @@
 
         <Button
             android:id="@+id/btn_retry"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
+            style="?attr/retryButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/statelayout_default_buttonText" />

@@ -42,6 +42,7 @@
     <style name="Theme.StateLayoutDemo.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <item name="retryButtonStyle">@style/Widget.MaterialComponents.Button.OutlinedButton</item>
     </style>
 
     <style name="Theme.StateLayoutDemo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
