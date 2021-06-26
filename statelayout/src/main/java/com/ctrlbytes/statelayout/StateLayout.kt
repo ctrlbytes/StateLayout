@@ -127,17 +127,18 @@ class StateLayout(context: Context, attrs: AttributeSet) : FrameLayout(context, 
 
     fun showError(message: Int) = showError(context.getString(message))
 
-    fun showEmpty(message: String) {
+    fun showEmpty(message: String, showRetry: Boolean = true) {
         state = State.EMPTY
         contentView.isVisible = false
         progressBarContainer.isVisible = false
         errorContainer.isVisible = true
+        btnRetry.isVisible = showRetry
 
         tvErrorMessage.text = message
         ivErrorIcon.setImageResource(emptyImage)
     }
 
-    fun showEmpty(message: Int) = showEmpty(context.getString(message))
+    fun showEmpty(message: Int, showRetry: Boolean = true) = showEmpty(context.getString(message), showRetry)
 
     fun onButtonClick(block: () -> Unit) {
         btnRetry.setOnClickListener { block() }
